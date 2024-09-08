@@ -1,0 +1,76 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/Site.css">
+    <script src="~/Scripts/script.js"></script>
+</head>
+<body>
+    <!-- Login Page Start -->
+    <main id="main" class="main">
+        <section class="main-container">
+            <div class="content-box">
+                <div class="content-wrapper">
+                    <div class="main-content">
+                        <!-- Logos -->
+                        <div class="logo-container">
+                            <img src="~/Assets/images/logo-01.png" alt="logo">
+                            <img src="~/Assets/images/logo-02.png" alt="logo">
+                        </div>
+                        <!-- Logos End -->
+                        <!-- Heading Start Here -->
+                        <div class="heading-container">
+                            <h1 class="main-heading">
+                                Enter Your <span class="highlight">Email</span> & <span class="highlight">Password</span>
+                            </h1>
+                            <p class="description">
+                                Welcome back! Please enter your credentials to access
+                                your account and manage your services.
+                            </p>
+                        </div>
+                        <!-- Heading End Here -->
+                        <!-- Form starts Here -->
+                        <form class="login-form" id="login-form">
+                            <div class="form-group">
+                                <label for="InputName" class="form-label">Name</label>
+                                <input type="text" aria-label="First name" class="input-field" required>
+                            </div>
+                            <div class="form-group password-group">
+                                <label for="InputPassword1" class="form-label">Password</label>
+                                <input type="password" class="input-field" id="InputPassword1" required>
+                                <img class="eye-icon" onclick="togglePassword()" src="~/Assets/icon/eye.svg" alt="eyeicon">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="Check1">
+                                <label class="form-check-label" for="Check1">Check me out</label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <img src="~/Assets/icon/plus-icon.svg" alt="icon" width="12px" height="12px">
+                                Create a User
+                            </button>
+                        </form>
+                        <!-- Form End Here -->
+                    </div>
+
+                    <div class="image-box">
+                        <img class="img" src="~/Assets/images/image.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
